@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projet CFD</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css" />
 </head>
+
 <body>
     <header>
         <div id="header-name">
-        meme<span id="Dot">.</span><span id="JS">JS</span>"  
+            meme<span id="Dot">.</span><span id="JS">JS</span>"
         </div>
         <div id="theme">theme</div>
     </header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
-          <div class="container">
+        <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link active" href="#" aria-current="page">Home <span
+                                class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
                             <a class="dropdown-item" href="#">Action 1</a>
                             <a class="dropdown-item" href="#">Action 2</a>
@@ -37,14 +42,59 @@
                     </li>
                 </ul>
                 <form class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control me-sm-2" type="text" placeholder="Search" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        Search
+                    </button>
                 </form>
             </div>
-      </div>
+        </div>
     </nav>
-    
-    
+    <article>
+        <div id="editor">
+            <div id="editor-viewer">
+                <imd src="https://picsvg.com/example/bike-1.svg" alt="" />
+            </div>
+            <div id="editor-form">
+                <div id="editor-form">
+                    <form action="#" name="meme-form">
+                        <h2>titre</h2>
+                        <input type="text" name="titre" id="meme-titre" />
+                        <hr />
+                        <label for="meme-image">
+                            <h2>image</h2>
+                        </label><br />
+                        <select name="imageID" id="meme-image">
+                            <option value="-1">aucune image</option>
+                        </select>
+
+                        <h2>text</h2>
+                        <input type="text" name="text" id="meme-text" placeholder="saisir texte" />
+                        <div class="flex-col">
+                            <div>
+                                <label for="meme-x">x</label><br />
+                                <input type="number" name="x" id="meme-x" />
+                            </div>
+                            <div>
+                                <label for="meme-y">x</label><br />
+                                <input type="number" name="y" id="meme-y" />
+                            </div>
+                            <hr />
+                        </div>
+                        <div class="flex-col">
+                            <input class="btn btn-warning" type="rest" id="meme-reset"
+                            value="Annuler">
+                            <button class="btn btn-primary"
+                            type="submit"
+                            id="meme-submit">Valider</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+
     <footer>SEB &copy; 2023</footer>
 </body>
+
 </html>
